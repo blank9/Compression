@@ -1,7 +1,7 @@
 # Compression
 @DataByteNITT
 
-Basic Implementation of LWZ and Huffman Algorithm
+Basic Implementation of LWZ and Huffman Compression Algorithms
 
 Compresses the picture named "download.jpg".
 And then deompresses it and stores it in a new file named "new_img.jpg".
