@@ -1,13 +1,14 @@
 # Compression
+@DataByteNITT
 
-Basic Implementation of LWZ Algorithm
+Basic Implementation of LWZ and Huffman Algorithm
 
 Compresses the picture named "download.jpg".
 And then deompresses it and stores it in a new file named "new_img.jpg".
 
-Note: The "download.jpg" file should be in the same directory as of the file "lwz.py" and "new_img.jpg" file will also be saved in the same directory.
+Note: The "download.jpg" file should be in the same directory as of the file "lwz.py"/"huffman.py" and "new_img.jpg" file will also be saved in the same directory.
 
-Has a compression ratio of in range 0.55 - 0.7
-with an average of 0.61
+LWZ has an average compression ratio of 0.71
+Huffman has an average compression ratio of 0.75
 
-Lossless algorithm.
+Lossless algorithms.
