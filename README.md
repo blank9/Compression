@@ -13,7 +13,7 @@ The decompression involves regeneration of the entire dictionary while moving th
 
 ## Huffman compression
 
-The algo generates a prefix code for each character in the string, based on a frequency analysis, assigning a shorter bitstring to a more frequent character. It uses a prefix tree, where each leaf node represents the character and each edge the symbol that needs to be added to the bit string, while moving down from the root, to get the code for a particular character.
+The algo generates a [prefix code](https://en.wikipedia.org/wiki/Prefix_code) for each character in the string, based on a frequency analysis, assigning a shorter bitstring to a more frequent character. It uses a [prefix tree](https://en.wikipedia.org/wiki/Trie), where each leaf node represents the character and each edge the symbol that needs to be added to the bit string, while moving down from the root, to get the code for a particular character.
 
 The decompression simply uses the prefix tree to find the character for a particular code.
 
@@ -26,6 +26,8 @@ Both the codes "huffman.py" and "lwz.py" compress the picture named "download.jp
 And then deompress it and store it in a new file named "new_img.jpg".
 
 **Note: The "download.jpg" file should be in the same directory as of the file "lwz.py" or "huffman.py" and the "new_img.jpg" file will also be saved in the same directory.**
+
+Both of these implementations convert the image into a base64 string and then apply the compression algorithm.
 
 LWZ gave a compression ratio of 0.639
 Huffman gave a compression ratio of 0.751
