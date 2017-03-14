@@ -1,5 +1,5 @@
 # Compression
-@DataByteNITT
+### @DataByteNITT
 
 This is a basic implementation of LWZ and Huffman Compression Algorithms to compress an image.
 
